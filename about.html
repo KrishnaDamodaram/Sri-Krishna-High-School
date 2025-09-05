@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sri Krishna High School</title>
+    <link rel="stylesheet" href="./style.minify.css" />
+  </head>
+  <body>
+    <header
+      class="headernav bg-primaryblue fixed top-0 z-10 w-full transition-colors duration-500 ease-in-out"
+    >
+      <nav class="flex w-full items-center justify-between">
+        <div>
+          <img
+            src="/images/logo.png"
+            class="h-28 w-28 md:mx-2 md:h-32 md:w-32 xl:mx-4"
+            alt="Sri Krishna High School logo"
+          />
+        </div>
+        <div>
+          <svg
+            id="menu_open"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="mx-6 mb-4 size-10 cursor-pointer text-white md:hidden"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+          <div class="hidden md:block">
+            <div
+              class="font-p navlinks flex items-center gap-x-4 font-normal md:gap-x-5 md:pr-[40px] md:text-sm md:text-white lg:gap-x-8 lg:text-[16px] xl:gap-x-10 xl:pr-[50px] xl:text-lg"
+            >
+              <a href="index.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="https://forms.gle/Hotuk3cYLg9YreoR8">Admissions</a>
+              <a
+                href="https://cisceboard.org/#:~:text=All%20candidates%20must%20enter%20and,of%20Vocational%20Education%20(Year%2012)"
+                >Curriculum</a
+              >
+              <a href="gallery.html">Gallery</a>
+              <a
+                class="bg-primaryblue border-lightyellow rounded-md border-2 px-4 py-3"
+                href=""
+                ><span class="text-white">Location</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Small Screen Menu -->
+    <div
+      id="smallscreenmenudiv"
+      class="pointer-events-none fixed inset-0 z-50 h-screen w-full translate-x-full transform bg-[#0b2344] opacity-0 transition-all duration-400 ease-in-out md:hidden"
+    >
+      <nav class="flex items-center justify-between bg-white">
+        <div class="px-2">
+          <img src="/images/logo.png" class="h-28 w-28" alt="logo" />
+        </div>
+        <div>
+          <svg
+            id="close"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="mx-6 size-10 cursor-pointer"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
+        </div>
+      </nav>
+
+      <nav
+        class="font-h1 flex flex-col justify-start gap-y-8 px-8 py-12 text-xl text-white"
+      >
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="https://forms.gle/Hotuk3cYLg9YreoR8">Admissions</a>
+        <a href="curriculum.html">Curriculum</a>
+        <a href="gallery.html">Gallery</a>
+        <a
+          href=""
+          class="bg-lightyellow inline-block self-start rounded-md px-6 py-2"
+          >Location</a
+        >
+      </nav>
+    </div>
+
+    <!-- Banner Image -->
+    <section>
+      <div
+        class="ban1_image mt-28 flex flex-col items-center justify-center text-white"
+      >
+        <p class="font-p font-semibold sm:text-lg lg:text-xl xl:text-2xl">
+          About us
+        </p>
+        <h1 class="font-h1 text-2xl font-bold lg:text-3xl xl:text-4xl">
+          Sri Krishna High School
+        </h1>
+      </div>
+    </section>
+
+    <main>
+      <!-- our vision -->
+      <section>
+        <div
+          class="px-4 py-6 md:px-5 lg:grid lg:grid-cols-2 lg:gap-x-4 lg:px-6 xl:px-14 xl:py-14"
+        >
+          <div class="xl:pr-10">
+            <h1 class="font-h1 text-xl font-bold lg:text-2xl xl:text-3xl">
+              Our Vision
+            </h1>
+            <p
+              class="font-p pt-4 text-justify text-sm leading-relaxed xl:pt-8 xl:text-lg"
+            >
+              The vision of Sri Krishna High School is to nurture a generation
+              of students who are not only academically strong but also equipped
+              with values, creativity, and critical thinking skills to thrive in
+              an ever-changing world. The school aspires to provide a balanced
+              education that blends knowledge with character, fostering a spirit
+              of curiosity, discipline, and respect for diversity. By
+              cultivating a safe, inclusive, and supportive environment, Sri
+              Krishna High School envisions its students becoming lifelong
+              learners and responsible global citizens.
+            </p>
+            <br />
+            <p class="font-p text-justify text-sm leading-relaxed xl:text-lg">
+              Looking toward the future, Sri Krishna High School envisions
+              itself as a center of excellence that inspires innovation,
+              leadership, and social responsibility. The school strives to
+              prepare students to confidently face challenges, embrace
+              opportunities, and contribute positively to society. Through
+              dedicated teaching, holistic development programs, and community
+              engagement, the vision is to empower every learner with the
+              confidence to pursue their dreams while upholding the values of
+              compassion, integrity, and service.
+            </p>
+          </div>
+          <div class="pt-6 lg:place-self-center">
+            <img
+              class="rounded-md lg:h-full"
+              src="/images/about/vision.jpg"
+              alt="Our Vision"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Mission -->
+      <section>
+        <div
+          class="px-4 pb-6 md:px-5 lg:grid lg:grid-cols-2 lg:gap-x-4 lg:px-6 xl:px-14 xl:pb-14"
+        >
+          <div class="order-last xl:pl-10">
+            <h1 class="font-h1 text-xl font-bold lg:text-2xl xl:text-3xl">
+              Our Mission
+            </h1>
+            <p
+              class="font-p pt-4 text-justify text-sm leading-relaxed xl:pt-8 xl:text-lg"
+            >
+              The mission of Sri Krishna High School is to provide quality
+              education that empowers students to achieve their fullest
+              potential in academics, character, and life skills. The school is
+              committed to creating a learner-centered environment where
+              curiosity, creativity, and innovation are encouraged. By
+              integrating modern teaching methods with traditional values, the
+              mission is to ensure that every child receives a well-rounded
+              education that builds confidence, responsibility, and resilience.
+            </p>
+            <br />
+            <p class="font-p text-justify text-sm leading-relaxed xl:text-lg">
+              Furthermore, Sri Krishna High School aims to instill in students a
+              deep respect for cultural heritage, ethical values, and social
+              responsibility. The mission is to prepare students not only for
+              academic success but also to develop empathy, leadership, and
+              teamwork. Through collaborative efforts between teachers, parents,
+              and the community, the school strives to shape individuals who can
+              adapt to global challenges, contribute positively to society, and
+              uphold the principles of integrity and service throughout their
+              lives.
+            </p>
+          </div>
+          <div class="pt-6 lg:order-first lg:place-self-center">
+            <img
+              class="rounded-md"
+              src="/images/about/mission.jpg"
+              alt="Our Mission"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Visionaries -->
+    <section>
+      <div class="px-4 py-6 md:px-5 lg:pt-10">
+        <h1 class="font-h1 text-center text-xl font-bold xl:text-2xl">
+          Meet the Visionaries
+        </h1>
+        <p class="font-p p-4 text-center text-sm font-semibold xl:text-lg">
+          A brilliant team that makes the dreams of hundreds of students come
+          true
+        </p>
+        <div
+          class="hidden lg:flex lg:flex-row lg:items-center lg:justify-center lg:gap-x-6 lg:py-10"
+        >
+          <img
+            class="object-cover lg:h-52 lg:w-52 xl:h-60 xl:w-60"
+            src="https://indianschoolsur.com/wp-content/uploads/2022/03/WhatsApp-Image-2022-01-16-at-17.57.06.jpeg"
+            alt=""
+          />
+          <img
+            class="object-cover lg:h-52 lg:w-52 xl:h-60 xl:w-60"
+            src="https://shabiba.eu-central-1.linodeobjects.com/2018/05/27/880026.jpg"
+            alt=""
+          />
+          <img
+            class="object-cover lg:h-52 lg:w-52 xl:h-60 xl:w-60"
+            src="/images/about/principal.jpg"
+            alt=""
+          />
+        </div>
+        <div
+          id="carousel-container"
+          class="relative z-1 mx-auto w-full max-w-2xl overflow-hidden rounded-xl shadow-lg lg:hidden"
+        >
+          <!-- Carousel Inner -->
+          <div class="carousel-inner relative h-96 w-full">
+            <!-- Carousel Item 1 (Active) -->
+            <div
+              class="carousel-item absolute inset-0 h-full w-full opacity-100"
+            >
+              <img
+                src="https://indianschoolsur.com/wp-content/uploads/2022/03/WhatsApp-Image-2022-01-16-at-17.57.06.jpeg"
+                class="h-full w-full rounded-md object-cover"
+                alt="Image 1"
+              />
+              <div
+                class="carousel-caption bg-opacity-40 absolute right-0 bottom-0 left-0 rounded-b-md bg-black p-6 text-center text-white"
+              >
+                <p class="mt-1 text-sm font-semibold">Managing Director</p>
+              </div>
+            </div>
+
+            <!-- Carousel Item 2 -->
+            <div class="carousel-item absolute inset-0 h-full w-full opacity-0">
+              <img
+                src="https://shabiba.eu-central-1.linodeobjects.com/2018/05/27/880026.jpg"
+                class="h-full w-full rounded-md object-cover"
+                alt="Image 2"
+              />
+              <div
+                class="carousel-caption bg-opacity-40 absolute right-0 bottom-0 left-0 rounded-b-md bg-black p-6 text-center text-white"
+              >
+                <p class="mt-1 text-sm font-semibold">Director</p>
+              </div>
+            </div>
+
+            <!-- Carousel Item 3 -->
+            <div class="carousel-item absolute inset-0 h-full w-full opacity-0">
+              <img
+                src="/images/about/principal.jpg"
+                class="h-full w-full rounded-md object-cover object-center"
+                alt="Image 3"
+              />
+              <div
+                class="carousel-caption bg-opacity-40 absolute right-0 bottom-0 left-0 rounded-b-md bg-black p-6 text-center text-white"
+              >
+                <p class="mt-1 text-sm font-semibold">Principal</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Indicators -->
+          <div
+            class="carousel-indicators absolute bottom-2 left-1/2 flex -translate-x-1/2 space-x-2"
+          >
+            <button
+              type="button"
+              data-slide-to="0"
+              class="h-2 w-2 rounded-full bg-white opacity-100"
+            ></button>
+            <button
+              type="button"
+              data-slide-to="1"
+              class="h-2 w-2 rounded-full bg-white opacity-50 hover:opacity-100"
+            ></button>
+            <button
+              type="button"
+              data-slide-to="2"
+              class="h-2 w-2 rounded-full bg-white opacity-50 hover:opacity-100"
+            ></button>
+          </div>
+
+          <!-- Carousel Controls -->
+          <button
+            class="carousel-control-prev absolute top-1/2 left-4 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-black/50 text-white hover:bg-black/70"
+            type="button"
+            data-slide="prev"
+          >
+            <svg
+              class="h-4 w-4"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+              fill="currentColor"
+            >
+              <path
+                d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+              />
+            </svg>
+            <span class="sr-only">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next absolute top-1/2 right-4 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-black/50 text-white hover:bg-black/70"
+            type="button"
+            data-slide="next"
+          >
+            <svg
+              class="h-4 w-4"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+              fill="currentColor"
+            >
+              <path
+                d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"
+              />
+            </svg>
+            <span class="sr-only">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards & Acheivements -->
+    <section>
+      <div class="px-4 pt-8 pb-0 xl:px-6">
+        <h1 class="font-h1 text-center text-xl font-bold xl:text-2xl">
+          Awards & Acheivements
+        </h1>
+        <p
+          class="font-p p-4 text-center text-sm font-semibold lg:px-4 xl:text-lg"
+        >
+          Students excel through dedication and innovative projects, showcasing
+          remarkable achievements in academics and extracurricular activities.
+        </p>
+      </div>
+      <div
+        class="flex flex-col gap-y-4 px-4 pb-10 md:gap-y-5 md:pt-10 lg:grid lg:grid-cols-3 lg:gap-x-4 xl:px-10"
+      >
+        <div class="flex flex-col items-center justify-center gap-y-2">
+          <img
+            class="h-80 rounded-md object-cover"
+            src="/images/about/Best School Award.jpg"
+            alt=""
+          />
+          <p class="font-p text-center text-sm font-semibold">
+            Best School Award
+          </p>
+        </div>
+        <div class="flex flex-col items-center justify-center gap-y-2">
+          <img
+            class="h-80 rounded-md object-cover"
+            src="https://www.eimglobal.com/storage/thumbs/articles/fit/1600x1064/eim-headers-1600px-1-home.jpg"
+            alt=""
+          />
+          <p class="font-p text-center text-sm font-semibold">
+            Green School Award
+          </p>
+        </div>
+        <div class="flex flex-col items-center justify-center gap-y-2">
+          <img
+            class="h-80 rounded-md object-cover"
+            src="https://www.paramparatrophy.com/product-img/football-awards-trophies-for-s-1733566494.jpg"
+            alt=""
+          />
+          <p class="font-p text-center text-sm font-semibold">
+            Best FootBall Award
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="bg-slate-800 py-10 text-white md:px-4 lg:py-14 xl:py-18">
+        <div class="lg:grid lg:grid-cols-2 lg:pb-10">
+          <div class="pt-6 xl:justify-items-center">
+            <img
+              class="h-32 w-32 xl:h-40 xl:w-40"
+              src="/images/logo.png"
+              alt="School Logo"
+            />
+            <h3
+              class="font-h1 px-4 pt-4 text-xl font-bold md:text-2xl lg:text-xl xl:text-3xl"
+            >
+              Sri Krishna High School
+            </h3>
+            <p
+              class="font-p px-4 py-2 text-justify text-sm leading-relaxed font-medium md:py-2.5 lg:pr-14 xl:pt-4 xl:text-[15px]"
+            >
+              Sai Nagar Colony, ECIL, Sai Nagar, Cherlapalli, Secunderabad,
+              Telangana 500062
+            </p>
+            <p
+              class="font-p px-4 text-sm font-medium md:pt-1 lg:pt-0 xl:text-[15px]"
+            >
+              +91 9000831789, +91 9000831790
+            </p>
+          </div>
+          <div
+            class="md:flex md:flex-row md:gap-x-18 md:pt-4 md:pb-10 xl:gap-x-32"
+          >
+            <div class="px-4 pt-10">
+              <h5
+                class="font-h1 text-lightyellow text-lg font-bold md:text-xl xl:text-2xl"
+              >
+                Quick Links
+              </h5>
+              <div
+                class="font-p flex flex-col gap-y-6 pt-6 text-sm font-medium md:pt-10 xl:text-[15px]"
+              >
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="https://forms.gle/Hotuk3cYLg9YreoR8">Admissions</a>
+                <a href="curriculum.html">Ciriculum</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="https://forms.gle/7fy4nxAZLcTqvAMBA">Contact</a>
+              </div>
+            </div>
+            <div class="px-4 py-10">
+              <h5
+                class="font-h1 text-lightyellow text-lg font-bold md:text-xl xl:text-2xl"
+              >
+                Connect With Us
+              </h5>
+              <div
+                class="font-p flex flex-col gap-y-6 pt-6 text-sm font-medium md:pt-10 md:pl-1 xl:text-[15px]"
+              >
+                <a href="">Gmail</a>
+                <a href="">Youtube</a>
+                <a href="">Instagram</a>
+                <a href="">Facebook</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div>
+          <p
+            class="text-lightyellow pt-6 text-center text-sm font-semibold lg:pt-14 xl:pt-18 xl:text-[15px]"
+          >
+            © 2025 Sri Krishna High School. <br class="xl:hidden" />All rights
+            reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./autoslide.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curriculum</title>
+    <link rel="stylesheet" href="./style.minify.css" />
+  </head>
+  <body>
+    <header
+      class="headernav bg-primaryblue fixed top-0 z-10 w-full transition-colors duration-500 ease-in-out"
+    >
+      <nav class="flex w-full items-center justify-between">
+        <div>
+          <img
+            src="/images/logo.png"
+            class="h-28 w-28 md:mx-2 md:h-32 md:w-32 xl:mx-4"
+            alt="Sri Krishna High School logo"
+          />
+        </div>
+        <div>
+          <svg
+            id="menu_open"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="mx-6 mb-4 size-10 cursor-pointer text-white md:hidden"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+          <div class="hidden md:block">
+            <div
+              class="font-p navlinks flex items-center gap-x-6 font-normal md:pr-[40px] md:text-sm md:text-white lg:gap-x-8 lg:text-[16px] xl:gap-x-10 xl:pr-[50px] xl:text-lg"
+            >
+              <a href="index.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="https://forms.gle/Hotuk3cYLg9YreoR8">Admissions</a>
+              <a
+                href="https://cisceboard.org/#:~:text=All%20candidates%20must%20enter%20and,of%20Vocational%20Education%20(Year%2012)"
+                >Curriculum</a
+              >
+              <a href="gallery.html">Gallery</a>
+              <a
+                class="bg-primaryblue border-lightyellow rounded-md border-2 px-4 py-3"
+                href=""
+                ><span class="text-white">Location</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Small Screen Menu -->
+    <div
+      id="smallscreenmenudiv"
+      class="pointer-events-none fixed inset-0 z-50 h-screen w-full translate-x-full transform bg-[#0b2344] opacity-0 transition-all duration-400 ease-in-out md:hidden"
+    >
+      <nav class="flex items-center justify-between bg-white">
+        <div class="px-2">
+          <img src="/images/logo.png" class="h-28 w-28" alt="logo" />
+        </div>
+        <div>
+          <svg
+            id="close"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="mx-6 size-10 cursor-pointer"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
+        </div>
+      </nav>
+
+      <nav
+        class="font-h1 flex flex-col justify-start gap-y-8 px-8 py-12 text-xl text-white"
+      >
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="https://forms.gle/Hotuk3cYLg9YreoR8">Admissions</a>
+        <a href="curriculum.html">Curriculum</a>
+        <a href="gallery.html">Gallery</a>
+        <a
+          href=""
+          class="bg-lightyellow inline-block self-start rounded-md px-6 py-2"
+          >Location</a
+        >
+      </nav>
+    </div>
+
+    <main>
+      <section>
+        <div class="mt-32 flex flex-col items-center justify-center px-4">
+          <div class="py-4">
+            <img
+              class="h-36 w-52"
+              src="../dist/images/about/CISCE_logo.png"
+              alt="ICSE Curriculum"
+            />
+          </div>
+          <p
+            class="font-p mt-4 text-justify text-sm leading-relaxed font-semibold"
+          >
+            The Indian Certificate of Secondary Education (ICSE), conducted by
+            the Council for the Indian School Certificate Examinations (CISCE),
+            is a Class 10 examination recognized in India and abroad. The
+            curriculum is known for its balance between academics and
+            co-curricular activities, with a strong focus on language,
+            analytical skills, and practical learning. It emphasizes conceptual
+            understanding over rote memorization and provides students with a
+            wide range of subjects to choose from, ensuring holistic
+            development. Assessment includes both internal evaluations and board
+            exams, encouraging students to develop research and
+            application-based knowledge. The ICSE curriculum is especially
+            valued for its strong foundation in English and its global
+            recognition.
+          </p>
+          <ul
+            class="font-p flex list-disc flex-col gap-y-1 px-4 py-4 text-sm font-semibold"
+          >
+            <li>Conducted by CISCE for Class 10 students.</li>
+            <li>
+              Balanced curriculum combining academics and co-curricular
+              activities.
+            </li>
+            <li>Emphasis on English language and literature.</li>
+            <li>
+              Subjects grouped into three categories (compulsory, electives,
+              skill-based).
+            </li>
+            <li>
+              Internal assessments (projects, practicals) carry significant
+              weight.
+            </li>
+            <li>
+              Encourages critical thinking, creativity, and application of
+              knowledge.
+            </li>
+            <li>
+              Offers a wide subject choice, including sciences, humanities,
+              arts, and technical subjects.
+            </li>
+            <li>Globally recognized and accepted for higher studies abroad.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="bg-slate-800 py-10 text-white md:px-4 lg:py-14 xl:py-18">
+        <div class="lg:grid lg:grid-cols-2 lg:pb-10">
+          <div class="pt-6 xl:justify-items-center">
+            <img
+              class="h-32 w-32 xl:h-40 xl:w-40"
+              src="../dist/images/logo.png"
+              alt="School Logo"
+            />
+            <h3
+              class="font-h1 px-4 pt-4 text-xl font-bold md:text-2xl lg:text-xl xl:text-3xl"
+            >
+              Sri Krishna High School
+            </h3>
+            <p
+              class="font-p px-4 py-2 text-justify text-sm leading-relaxed font-medium md:py-2.5 lg:pr-14 xl:pt-4 xl:text-[15px]"
+            >
+              Sai Nagar Colony, ECIL, Sai Nagar, Cherlapalli, Secunderabad,
+              Telangana 500062
+            </p>
+            <p
+              class="font-p px-4 text-sm font-medium md:pt-1 lg:pt-0 xl:text-[15px]"
+            >
+              +91 9000831789, +91 9000831790
+            </p>
+          </div>
+          <div
+            class="md:flex md:flex-row md:gap-x-18 md:pt-4 md:pb-10 xl:gap-x-32"
+          >
+            <div class="px-4 pt-10">
+              <h5
+                class="font-h1 text-lightyellow text-lg font-bold md:text-xl xl:text-2xl"
+              >
+                Quick Links
+              </h5>
+              <div
+                class="font-p flex flex-col gap-y-6 pt-6 text-sm font-medium md:pt-10 xl:text-[15px]"
+              >
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="https://forms.gle/Hotuk3cYLg9YreoR8">Admissions</a>
+                <a href="curriculum.html">Ciriculum</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="https://forms.gle/7fy4nxAZLcTqvAMBA">Contact</a>
+              </div>
+            </div>
+            <div class="px-4 py-10">
+              <h5
+                class="font-h1 text-lightyellow text-lg font-bold md:text-xl xl:text-2xl"
+              >
+                Connect With Us
+              </h5>
+              <div
+                class="font-p flex flex-col gap-y-6 pt-6 text-sm font-medium md:pt-10 md:pl-1 xl:text-[15px]"
+              >
+                <a href="">Gmail</a>
+                <a href="">Youtube</a>
+                <a href="">Instagram</a>
+                <a href="">Facebook</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div>
+          <p
+            class="text-lightyellow pt-6 text-center text-sm font-semibold lg:pt-14 xl:pt-18 xl:text-[15px]"
+          >
+            © 2025 Sri Krishna High School. <br class="xl:hidden" />All rights
+            reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

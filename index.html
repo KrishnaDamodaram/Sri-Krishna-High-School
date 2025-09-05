@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sri Krishna High School</title>
+    <link rel="stylesheet" href="./style.minify.css" />
+  </head>
+  <body class="antialiased">
+    <!-- navbar -->
+    <header
+      class="headernav fixed top-0 z-0 w-full transition-colors duration-500 ease-in-out"
+    >
+      <nav class="flex w-full items-center justify-between">
+        <div>
+          <img
+            src="/images/logo.png"
+            class="h-28 w-28 md:mx-2 md:h-32 md:w-32 xl:mx-4"
+            alt="Sri Krishna High School logo"
+          />
+        </div>
+        <div>
+          <svg
+            id="menu_open"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="mx-6 mb-4 size-10 cursor-pointer text-white md:hidden"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+          <div class="hidden md:block">
+            <div
+              class="font-p navlinks flex items-center gap-x-4 font-normal md:gap-x-5 md:pr-[40px] md:text-sm md:text-white lg:gap-x-8 lg:text-[16px] xl:gap-x-10 xl:pr-[50px] xl:text-lg"
+            >
+              <a href="index.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="https://forms.gle/Hotuk3cYLg9YreoR8">Admissions</a>
+              <a
+                href="https://cisceboard.org/#:~:text=All%20candidates%20must%20enter%20and,of%20Vocational%20Education%20(Year%2012)"
+                >Curriculum</a
+              >
+              <a href="gallery.html">Gallery</a>
+              <a
+                class="bg-primaryblue border-lightyellow rounded-md border-2 px-4 py-3"
+                href=""
+                ><span class="text-white">Location</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Small Screen Menu -->
+    <div
+      id="smallscreenmenudiv"
+      class="pointer-events-none fixed inset-0 z-50 h-screen w-full translate-x-full transform bg-[#0b2344] opacity-0 transition-all duration-400 ease-in-out md:hidden"
+    >
+      <nav class="flex items-center justify-between bg-white">
+        <div class="px-2">
+          <img src="/images/logo.png" class="h-28 w-28" alt="logo" />
+        </div>
+        <div>
+          <svg
+            id="close"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="mx-6 size-10 cursor-pointer"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
+        </div>
+      </nav>
+
+      <nav
+        class="font-h1 flex flex-col justify-start gap-y-8 px-8 py-12 text-xl text-white"
+      >
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="https://forms.gle/Hotuk3cYLg9YreoR8">Admissions</a>
+        <a href="curriculum.html">Curriculum</a>
+        <a href="gallery.html">Gallery</a>
+        <a
+          href=""
+          class="bg-lightyellow inline-block self-start rounded-md px-6 py-2"
+          >Location</a
+        >
+      </nav>
+    </div>
+
+    <!-- Carousel Banner Section -->
+    <section id="Banner">
+      <div>
+        <div class="bg_banner_1 flex flex-col items-center justify-center">
+          <h1
+            class="font-h1 mt-32 px-2 text-center text-2xl font-bold text-white sm:mt-40 sm:px-16 md:mt-48 md:px-32 lg:mt-40 lg:px-40 xl:px-72 xl:text-3xl xl:leading-relaxed"
+          >
+            <span class="text-4xl xl:text-5xl">" E</span>ducation is not just
+            about going to school and getting a degree. It's about widening your
+            knowledge and absorbing the truth about life.<span class="text-4xl"
+              >"</span
+            >
+          </h1>
+          <div
+            class="mt-12 flex gap-x-3.5 font-semibold sm:mt-16 sm:gap-x-5 lg:mt-12"
+          >
+            <a class="button xl:text-lg" href="about.html">About</a>
+            <a
+              class="rounded-md bg-[#ec8c6a] px-8 py-4 text-white hover:bg-[#af593a] md:px-6 md:py-3 xl:px-8 xl:py-4 xl:text-lg"
+              href="https://forms.gle/7fy4nxAZLcTqvAMBA"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <!-- School Introduction -->
+      <section id="school-intro">
+        <div
+          class="p-4 md:grid md:grid-cols-2 md:content-center md:justify-items-center-safe md:p-0 md:px-10 md:py-14 xl:py-28"
+        >
+          <!-- school image -->
+          <div>
+            <img
+              class="rounded-md md:mt-6 md:h-[410px] md:object-cover xl:h-[420px]"
+              src="/images/school image.jpg"
+              alt="School Image"
+            />
+          </div>
+          <!-- school Introduction matter -->
+          <div class="md:pl-7 xl:px-10">
+            <h1
+              class="font-h1 text-hoverblue mt-6 text-center text-xl font-bold md:mt-8 md:text-left md:text-2xl xl:mt-4 xl:text-3xl"
+            >
+              Sri Krishna High School
+            </h1>
+            <br />
+            <p
+              class="font-p text-justify text-sm leading-relaxed font-normal md:text-xs xl:text-lg"
+            >
+              Sri Krishna High School is a well-established institution
+              dedicated to providing quality education up to Class X. The school
+              focuses on nurturing young minds through a balanced approach that
+              combines academic excellence with character development. With a
+              structured curriculum, experienced faculty, and modern teaching
+              methodologies, the school ensures that every student receives the
+              right guidance to excel in studies as well as in life.
+            </p>
+            <br />
+            <p
+              class="font-p text-justify text-sm leading-relaxed font-normal md:text-xs xl:text-lg"
+            >
+              The environment at Sri Krishna High School is designed to
+              encourage curiosity, creativity, and critical thinking. Classrooms
+              are equipped with effective learning tools, and teachers pay
+              individual attention to students to help them overcome challenges
+              and achieve their full potential. Alongside academics, the school
+              emphasizes extracurricular activities, ensuring that children grow
+              holistically with confidence and discipline.
+            </p>
+            <div class="pt-12 text-center xl:pt-18">
+              <a
+                class="bg-primaryblue border-lightyellow hover:bg-hoverblue rounded-md border-2 px-8 py-4 text-sm font-medium text-white md:px-6 md:py-3 xl:py-4 xl:text-lg"
+                href="https://forms.gle/7fy4nxAZLcTqvAMBA"
+                >Enquiry Form</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Key Principles of School -->
+      <section id="principles">
+        <div
+          class="mt-10 bg-[#6dc0e3] px-2 py-16 text-white sm:px-10 sm:py-14 md:px-16 lg:p-0 lg:py-16 xl:py-20"
+        >
+          <h1
+            class="font-h1 my-6 text-center text-xl font-bold sm:my-10 xl:pl-20 xl:text-left xl:text-3xl"
+          >
+            Key Principles of School
+          </h1>
+          <div
+            class="grid grid-cols-2 gap-6 py-4 sm:py-6 md:gap-x-28 md:p-0 md:px-4 md:pt-10 md:pb-12 lg:grid-cols-4 lg:p-0 lg:px-16 lg:pt-12 lg:pb-14"
+          >
+            <div
+              class="flex flex-col items-center justify-center text-center lg:gap-y-4 xl:gap-y-5"
+            >
+              <img
+                class="h-16 w-16 p-2"
+                src="/images/icons/notebook.png"
+                alt="Curriculum Logo"
+              />
+              <h2 class="font-h1 text-sm font-semibold xl:text-lg">
+                Holistic Curriculum based on National Education Policy
+              </h2>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center text-center lg:gap-y-4"
+            >
+              <img
+                class="h-16 w-16 p-2"
+                src="/images/icons/idea.png"
+                alt="Skill Logo"
+              />
+              <h2 class="font-h1 text-sm font-semibold xl:text-lg">
+                Nurturing Global Citizens with 21st century skills
+              </h2>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center text-center lg:gap-y-4"
+            >
+              <img
+                class="h-16 w-16 p-2"
+                src="/images/icons/design.png"
+                alt="Project Logo"
+              />
+              <h2 class="font-h1 text-sm font-semibold xl:text-lg">
+                Project-Based Learning for Skill Development
+              </h2>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center text-center lg:gap-y-4"
+            >
+              <img
+                class="h-16 w-16 p-2"
+                src="/images/icons/school.png"
+                alt="Infrastructure Logo"
+              />
+              <h2
+                id="about-us"
+                class="font-h1 text-sm font-semibold xl:text-lg"
+              >
+                State of Art Infrastructure for Learning Ecosystem
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- about us -->
+      <section>
+        <div
+          class="bgimage h-auto pt-10 sm:pt-12 lg:grid lg:grid-cols-3 lg:pt-16 xl:pt-28 xl:pb-10"
+        >
+          <!-- logo & school name -->
+          <div class="xl:justify-items-center">
+            <img
+              class="h-32 w-32 md:mx-2 xl:mx-4 xl:h-40 xl:w-40"
+              src="/images/logo.png"
+              alt="School Logo"
+            />
+            <h1
+              class="font-h1 text-lightyellow mt-6 px-4 text-2xl font-bold sm:px-6 md:px-8 lg:mt-4 xl:mt-2 xl:text-3xl"
+            >
+              About us
+            </h1>
+          </div>
+          <!-- about us matter -->
+          <div
+            class="col-span-2 px-4 py-6 text-justify text-sm leading-relaxed text-white sm:px-6 md:px-8 xl:px-20 xl:text-lg"
+          >
+            <p>
+              The school follows clear rules to maintain punctuality, regular
+              attendance, respect for teachers, and good behavior, ensuring a
+              safe and positive learning environment for every child. Built on
+              principles of honesty, hard work, and respect, the school aims to
+              shape responsible citizens along with successful students.
+              Teachers guide children not just in academics but also in building
+              character, teamwork, and leadership qualities.
+            </p>
+            <br />
+            <p>
+              Career guidance is an important part of the school’s vision. From
+              Class VIII onwards, students are motivated to discover their
+              interests and strengths, preparing them for future studies in
+              science, commerce, or arts. Regular workshops, counseling, and
+              exposure to different fields help them make confident choices for
+              their future. By the time students complete Class X, they leave
+              with strong knowledge, discipline, and values—well-prepared for
+              higher education and for building successful careers
+            </p>
+            <br />
+            <p>
+              Beyond classroom learning, the school actively promotes values
+              such as respect, teamwork, and responsibility. Regular cultural
+              programs, sports events, and interactive sessions are organized to
+              help students discover their talents and build leadership
+              qualities. By the time they complete Class X, students are
+              well-prepared not only for higher studies but also for the
+              responsibilities of a progressive society.
+            </p>
+            <a
+              href="about.html"
+              class="button border-lightyellow my-10 inline-block border-2 sm:my-14 md:my-10 lg:my-14"
+              >About Us</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- principal message -->
+      <section id="principal-message">
+        <div
+          class="pb-6 md:grid md:grid-cols-2 md:px-4 md:py-16 lg:px-6 lg:py-20 xl:px-14 xl:py-28"
+        >
+          <div
+            class="flex flex-col gap-y-6 p-4 md:order-last md:justify-center md:gap-y-2 md:p-0 xl:items-center xl:justify-center xl:gap-y-6"
+          >
+            <img
+              class="rounded-md md:h-[400px] md:object-cover md:object-[100%_75%] md:p-6 xl:h-[410px] xl:w-[560px] xl:object-[100%_50%] xl:p-0"
+              src="/images/principal.jpg"
+              alt="principal image"
+            />
+            <p
+              class="font-p text-primaryblue pt-2 text-center text-sm font-semibold md:pt-0 xl:text-lg"
+            >
+              T.Sharada Devi - Principal
+            </p>
+          </div>
+          <div
+            class="mb-4 flex flex-col gap-y-4 px-4 pt-2 md:order-first md:gap-y-6 xl:gap-y-6"
+          >
+            <h1
+              class="font-h1 text-hoverblue text-xl font-bold md:text-2xl xl:text-3xl"
+            >
+              Principal Message
+            </h1>
+            <p
+              class="font-p text-justify text-sm leading-relaxed md:text-xs xl:text-lg"
+            >
+              Our aim is to provide quality education while instilling
+              discipline, values, and a love for learning in every child. We
+              believe that education is not limited to academics alone but also
+              includes building character, confidence, and life skills. At Sri
+              Krishna High School, equal importance is given to studies, sports,
+              and extracurricular activities to ensure the all-round development
+              of students.
+              <br /><br />
+              We expect our children to follow school rules sincerely, respect
+              teachers, and maintain discipline, as these qualities are the
+              foundation of success. Parents are our valued partners in this
+              journey, and with their support and encouragement, we can help
+              students excel in studies while also preparing them to become
+              responsible, compassionate, and successful individuals in the
+              future. Together, we can make the schooling years a joyful,
+              meaningful, and enriching experience for every child.
+            </p>
+            <!-- <div class="flex gap-x-6 py-4">
+              <a
+                class="bg-primaryblue border-lightyellow rounded-md border-2 px-6 py-3 font-medium text-white xl:py-4 xl:text-lg"
+                href=""
+                >Enquiry Form</a
+              >
+              <a
+                id="students-Life"
+                class="bg-lightrose rounded-md px-6 py-3 font-medium text-white xl:py-4 xl:text-lg"
+                href=""
+                >Read More</a
+              >
+            </div> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Student's Life -->
+      <section>
+        <div class="bg-[#e9f1f5] px-4 py-14 sm:px-6 md:py-22 xl:px-10 xl:py-24">
+          <h1 class="font-h1 text-xl font-bold lg:px-4 xl:text-3xl">
+            Student's Life at Sri Krishna High School
+          </h1>
+          <div
+            class="py-6 md:grid md:grid-cols-3 md:gap-x-10 md:pt-22 lg:px-4 xl:gap-x-16 xl:pt-28"
+          >
+            <div
+              class="flex flex-col gap-y-3 pt-8 sm:gap-y-3.5 md:gap-y-4 md:p-0"
+            >
+              <img
+                class="h-14 w-14 md:h-10 md:w-10 xl:h-14 xl:w-14"
+                src="/images/icons/presentation.png"
+                alt="Digital Citizens"
+              />
+              <h2 class="font-h1 text-lg font-bold xl:text-xl">
+                Digital Citizens
+              </h2>
+              <p
+                class="font-p text-justify text-sm leading-relaxed md:text-xs xl:text-[15px]"
+              >
+                We endeavor to use technology as a means of empowering students
+                to think and act responsibly and ethically.
+              </p>
+            </div>
+            <div
+              class="flex flex-col gap-y-3 py-10 sm:gap-y-3.5 md:gap-y-4 md:p-0"
+            >
+              <img
+                class="h-14 w-14 md:h-10 md:w-10 xl:h-14 xl:w-14"
+                src="/images/icons/people.png"
+                alt="Social Stewards"
+              />
+              <h2 class="font-h1 text-lg font-bold xl:text-xl">
+                Social Stewards
+              </h2>
+              <p
+                class="font-p text-justify text-sm leading-relaxed md:text-xs xl:text-[15px]"
+              >
+                We encourage our students to be caring individuals who respect
+                differences and are concerned for the well being of others.
+              </p>
+            </div>
+            <div
+              class="flex flex-col gap-y-3 pt-6 sm:gap-y-3.5 md:gap-y-4 md:p-0"
+            >
+              <img
+                class="h-14 w-14 md:h-10 md:w-10 xl:h-14 xl:w-14"
+                src="/images/icons/knowledge.png"
+                alt="Holistic Learners"
+              />
+              <h2 class="font-h1 text-lg font-bold xl:text-xl">
+                Holistic Learners
+              </h2>
+              <p
+                class="font-p text-justify text-sm leading-relaxed md:text-xs xl:text-[15px]"
+              >
+                We believe in holistic development and our curriculum provides a
+                blend of curricular and co-curricular activities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Infrastructure -->
+      <section id="infrastructure">
+        <div class="lg:grid lg:grid-cols-2">
+          <div>
+            <img
+              class="lg:h-full lg:object-cover"
+              src="/images/infra.jpg"
+              alt="Infrastructure"
+            />
+          </div>
+          <div
+            class="flex flex-col gap-y-6 bg-[#d27300] px-6 py-10 text-white md:gap-y-9 md:px-10 md:py-20 xl:px-16 xl:py-24"
+          >
+            <h1 class="font-h1 text-xl font-bold md:text-2xl xl:text-3xl">
+              Infrastructure
+            </h1>
+            <p
+              class="font-p text-justify text-sm leading-relaxed md:font-semibold xl:text-lg xl:font-normal"
+            >
+              The campus offers spacious classrooms, a well-stocked library, and
+              modern laboratories to support effective learning. Sports
+              facilities and activity areas are also provided to encourage
+              physical fitness and overall development.
+            </p>
+            <ul
+              class="font-p flex list-disc flex-col gap-y-4 px-4 text-sm font-bold md:font-normal xl:text-lg"
+            >
+              <li>Science, Chemical and computer Laboratories</li>
+              <li>Huge Sports Ground</li>
+              <li>Auditorium</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- School Activities -->
+      <section id="School-Activities">
+        <div class="px-4 pt-10 md:py-16 lg:px-6 lg:py-20 xl:pt-28">
+          <div class="flex flex-col gap-y-4">
+            <h1
+              class="font-h1 text-hoverblue pt-6 text-center text-xl font-bold md:text-2xl xl:text-3xl"
+            >
+              School Activities
+            </h1>
+            <p
+              class="font-p mt-2 px-2 text-justify text-sm leading-relaxed md:mt-4 md:px-4 md:text-center xl:text-lg"
+            >
+              Sports day, science fair, art exhibition, debate competition,
+              talent show, field trip, book fair, music festival, cultural day,
+              gardening club.
+            </p>
+          </div>
+          <div
+            class="grid grid-cols-2 gap-1 py-8 md:py-10 lg:gap-2 xl:px-10 xl:py-14"
+          >
+            <div>
+              <img
+                class="h-full w-full rounded-md object-cover"
+                src="/images/sports.jpg"
+                alt="Sports Activities"
+              />
+            </div>
+            <div class="flex flex-col gap-y-1 sm:gap-y-1.5 lg:gap-y-2">
+              <div>
+                <img
+                  class="h-40 w-full rounded-md object-cover sm:h-48 md:h-60 lg:h-64 xl:h-96"
+                  src="/images/flag.jpg"
+                  alt="Flag Hoisting"
+                />
+              </div>
+              <div>
+                <img
+                  class="h-40 w-full rounded-md object-cover sm:h-48 md:h-60 lg:h-64 xl:h-96"
+                  src="/images/activites.jpg"
+                  alt="School Activities"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- moto line -->
+      <section id="motivationLine">
+        <div
+          class="bgimage2 mt-10 flex flex-col items-center justify-center md:mt-0"
+        >
+          <h1
+            id="contact"
+            class="font-h1 px-4 text-center text-xl leading-relaxed font-bold text-white sm:px-18 lg:px-40 lg:text-2xl xl:px-96 xl:text-3xl"
+          >
+            At Sri Krishna High School, we encourage students to reflect,
+            respect, aspire, explore and work for more
+          </h1>
+        </div>
+      </section>
+    </main>
+
+    <!-- Quick Contact -->
+    <section>
+      <div
+        class="mx-auto max-w-screen-md px-4 py-16 sm:px-8 sm:py-18 md:py-24 lg:py-28"
+      >
+        <h2
+          class="text-primaryblue mb-4 text-center text-4xl font-extrabold tracking-tight"
+        >
+          Contact Us
+        </h2>
+        <p
+          class="mb-8 text-center font-light text-gray-500 sm:text-lg lg:mb-16"
+        >
+          Feel Free to contact us? Want to ask any doubt? We definetly help you.
+        </p>
+        <form action="#" class="space-y-8 sm:space-y-10 sm:pt-4">
+          <div>
+            <label for="email" class="mb-2 block text-sm font-medium xl:text-lg"
+              >Your email</label
+            >
+            <input
+              type="email"
+              id="email"
+              class="focus:ring-primary-500 focus:border-primary-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm"
+              placeholder="Enter Your Gmail"
+              required
+            />
+          </div>
+          <div>
+            <label
+              for="subject"
+              class="mb-2 block text-sm font-medium xl:text-lg"
+              >Subject</label
+            >
+            <input
+              type="text"
+              id="subject"
+              class="focus:ring-primary-500 focus:border-primary-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 shadow-sm"
+              placeholder="Write your subject"
+              required
+            />
+          </div>
+          <div class="sm:col-span-2">
+            <label
+              for="message"
+              class="mb-2 block text-sm font-medium xl:text-lg"
+              >Your message</label
+            >
+            <textarea
+              id="message"
+              rows="6"
+              class="focus:ring-primary-500 focus:border-primary-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm shadow-sm"
+              placeholder="Write Your Query"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="border-lightyellow bg-primaryblue hover:bg-primary-800 focus:ring-primary-300 rounded-md border-2 px-5 py-3 text-center text-sm font-medium text-white focus:ring-4 focus:outline-none sm:w-fit xl:text-lg"
+          >
+            Send message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="bg-slate-800 py-10 text-white md:px-4 lg:py-14 xl:py-18">
+        <div class="lg:grid lg:grid-cols-2 lg:pb-10">
+          <div class="pt-6 xl:justify-items-center">
+            <img
+              class="h-32 w-32 xl:h-40 xl:w-40"
+              src="/images/logo.png"
+              alt="School Logo"
+            />
+            <h3
+              class="font-h1 px-4 pt-4 text-xl font-bold md:text-2xl lg:text-xl xl:text-3xl"
+            >
+              Sri Krishna High School
+            </h3>
+            <p
+              class="font-p px-4 py-2 text-justify text-sm leading-relaxed font-medium md:py-2.5 lg:pr-14 xl:pt-4 xl:text-[15px]"
+            >
+              Sai Nagar Colony, ECIL, Sai Nagar, Cherlapalli, Secunderabad,
+              Telangana 500062
+            </p>
+            <p
+              class="font-p px-4 text-sm font-medium md:pt-1 lg:pt-0 xl:text-[15px]"
+            >
+              +91 9000831789, +91 9000831790
+            </p>
+          </div>
+          <div
+            class="md:flex md:flex-row md:gap-x-18 md:pt-4 md:pb-10 xl:gap-x-32"
+          >
+            <div class="px-4 pt-10">
+              <h5
+                class="font-h1 text-lightyellow text-lg font-bold md:text-xl xl:text-2xl"
+              >
+                Quick Links
+              </h5>
+              <div
+                class="font-p flex flex-col gap-y-6 pt-6 text-sm font-medium md:pt-10 xl:text-[15px]"
+              >
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="https://forms.gle/Hotuk3cYLg9YreoR8">Admissions</a>
+                <a href="curriculum.html">Ciriculum</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="https://forms.gle/7fy4nxAZLcTqvAMBA">Contact</a>
+              </div>
+            </div>
+            <div class="px-4 py-10">
+              <h5
+                class="font-h1 text-lightyellow text-lg font-bold md:text-xl xl:text-2xl"
+              >
+                Connect With Us
+              </h5>
+              <div
+                class="font-p flex flex-col gap-y-6 pt-6 text-sm font-medium md:pt-10 md:pl-1 xl:text-[15px]"
+              >
+                <a href="">Gmail</a>
+                <a href="">Youtube</a>
+                <a href="">Instagram</a>
+                <a href="">Facebook</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div>
+          <p
+            class="text-lightyellow pt-6 text-center text-sm font-semibold lg:pt-14 xl:pt-18 xl:text-[15px]"
+          >
+            © 2025 Sri Krishna High School. <br class="xl:hidden" />All rights
+            reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
