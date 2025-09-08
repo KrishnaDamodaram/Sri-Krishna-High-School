@@ -4,8 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sri Krishna High School</title>
-    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="./style.minify.css" />
+    <style>
+      .loading-button {
+        cursor: not-allowed;
+        opacity: 0.6;
+      }
+      .form-message {
+        margin-top: 1rem;
+        text-align: center;
+        font-weight: 500;
+      }
+    </style>
   </head>
   <body class="antialiased">
     <!-- navbar -->
@@ -122,7 +133,7 @@
             <a class="button xl:text-lg" href="about.html">About</a>
             <a
               class="rounded-md bg-[#ec8c6a] px-8 py-4 text-white hover:bg-[#af593a] md:px-6 md:py-3 xl:px-8 xl:py-4 xl:text-lg"
-              href="https://forms.gle/7fy4nxAZLcTqvAMBA"
+              href="#contact"
               >Contact</a
             >
           </div>
@@ -550,24 +561,28 @@
         class="mx-auto max-w-screen-md px-4 py-16 sm:px-8 sm:py-18 md:py-24 lg:py-28"
       >
         <h2
-          class="text-primaryblue mb-4 text-center text-4xl font-extrabold tracking-tight"
+          class="mb-4 text-center text-4xl font-extrabold tracking-tight text-primaryblue"
         >
           Contact Us
         </h2>
         <p
           class="mb-8 text-center font-light text-gray-500 sm:text-lg lg:mb-16"
         >
-          Feel Free to contact us? Want to ask any doubt? We definetly help you.
+          Feel free to contact us. Want to ask any doubt? We will definitely
+          help you.
         </p>
-        <form action="#" class="space-y-8 sm:space-y-10 sm:pt-4">
+        <form id="contactForm" class="space-y-8 sm:space-y-10 sm:pt-4">
           <div>
-            <label for="email" class="mb-2 block text-sm font-medium xl:text-lg"
+            <label
+              for="email"
+              class="mb-2 block text-sm font-medium text-gray-900 xl:text-lg"
               >Your email</label
             >
             <input
               type="email"
               id="email"
-              class="focus:ring-primary-500 focus:border-primary-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm"
+              name="email"
+              class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
               placeholder="Enter Your Gmail"
               required
             />
@@ -575,13 +590,14 @@
           <div>
             <label
               for="subject"
-              class="mb-2 block text-sm font-medium xl:text-lg"
+              class="mb-2 block text-sm font-medium text-gray-900 xl:text-lg"
               >Subject</label
             >
             <input
               type="text"
               id="subject"
-              class="focus:ring-primary-500 focus:border-primary-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 shadow-sm"
+              name="subject"
+              class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
               placeholder="Write your subject"
               required
             />
@@ -589,22 +605,25 @@
           <div class="sm:col-span-2">
             <label
               for="message"
-              class="mb-2 block text-sm font-medium xl:text-lg"
+              class="mb-2 block text-sm font-medium text-gray-900 xl:text-lg"
               >Your message</label
             >
             <textarea
               id="message"
+              name="message"
               rows="6"
-              class="focus:ring-primary-500 focus:border-primary-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm shadow-sm"
+              class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
               placeholder="Write Your Query"
             ></textarea>
           </div>
           <button
             type="submit"
-            class="border-lightyellow bg-primaryblue hover:bg-primary-800 focus:ring-primary-300 rounded-md border-2 px-5 py-3 text-center text-sm font-medium text-white focus:ring-4 focus:outline-none sm:w-fit xl:text-lg"
+            id="submitButton"
+            class="rounded-md border-2 border-hoverblue bg-primaryblue px-5 py-3 text-center text-sm font-medium text-white shadow-sm transition-colors duration-200 hover:bg-hoverblue hover:border-hoverblue focus:ring-4 focus:ring-white focus:outline-none sm:w-fit xl:text-lg"
           >
             Send message
           </button>
+          <div id="formStatus" class="form-message"></div>
         </form>
       </div>
     </section>
@@ -684,6 +703,48 @@
       </div>
     </footer>
 
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent default form submission
+
+          const form = event.target;
+          const button = document.getElementById("submitButton");
+          const statusDiv = document.getElementById("formStatus");
+          const formData = new FormData(form);
+          const scriptUrl =
+            "https://script.google.com/macros/s/AKfycbxrMy8EhwVIsLc_1nZ-OJuSGxExc4Gs_wBzw0RxEyuy5uEl2DXMXb3Wb-e6nqiiJhIX/exec";
+
+          // Show loading state
+          button.textContent = "Sending...";
+          button.classList.add("loading-button");
+          button.disabled = true;
+          statusDiv.textContent = ""; // Clear previous message
+
+          fetch(scriptUrl, {
+            method: "POST",
+            body: formData,
+            mode: "no-cors", // Use 'no-cors' for Google Apps Script to avoid CORS issues
+          })
+            .then(() => {
+              statusDiv.textContent = "Thank you! Your message has been sent.";
+              statusDiv.style.color = "green";
+              form.reset(); // Reset form fields on success
+            })
+            .catch((error) => {
+              console.error("Error:", error);
+              statusDiv.textContent = "Oops! Something went wrong.";
+              statusDiv.style.color = "red";
+            })
+            .finally(() => {
+              // Revert button state
+              button.textContent = "Send message";
+              button.classList.remove("loading-button");
+              button.disabled = false;
+            });
+        });
+    </script>
     <script src="index.js"></script>
   </body>
 </html>
